@@ -1,0 +1,23 @@
+<div id="approveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Approve</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>Are you sure you want to Approve this request?</h3>
+            </div>
+            <div class="modal-footer">
+                <form id="approveModalForm" method="post">
+                    <input type="hidden" name="approveId" id="approveId">
+                    <button type="submit" name="approve" class="btn btn-success">Approve</button>
+                </form>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,243 @@
+body {
+  color: #777777;
+  font-size: 15px;
+  line-height: 1.65em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+/******       Navigation Bar       ******/
+/* navigation bar */
+.header-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  background: #fff;
+  color: #af111c;
+}
+.navbar-brand, .navbar-brand:hover {
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.header-nav .navbar-nav > li {
+  margin-left: 12px;
+  position: relative;
+}
+.navbar .navbar-nav>li.active>a, .navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus {
+  background: transparent;
+  color: #af111c;
+}
+.navbar-nav .nav-link {
+  color: #222;
+  float: left;
+  font-weight: 700;
+}
+
+
+/* logo */
+.logo img{
+  width: 100%;
+  max-height: 500px;
+}
+.logo blockquote {
+  padding: 30px 30px 20px 45px;
+  margin-bottom: 20px;
+  background-color: #81d742;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.logo blockquote, q {
+  quotes: "" "";
+}
+.logo blockquote p {
+  font-size: 2rem;
+  font-family: 'Open Sans', serif;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 13px;
+  padding-left: 40px;
+}
+.logo blockquote p:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #ffffff;
+  font-size: 60px;
+  position: absolute;
+  top: -27px;
+  left: -27px;
+}
+
+/******       Footer       ******/
+/* footer */
+#addFooter {
+  margin-top: 30px;
+}
+footer {
+  display: flex;
+  background: #000219;
+}
+footer a {
+  color: lightskyblue;
+}
+footer p {
+  color: #dadada;
+  margin: 12px 20px;
+}
+
+
+/******       error page       ******/
+
+.error-title {
+  position: relative;
+}
+.entry-header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+}
+.error-title span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+
+
+/******       Forms       ******/
+/* form  */
+.customForm {
+  background-color: #eceef1;
+  font-family: Raleway;
+  padding: 40px;
+  margin: 15px 0;
+  box-shadow: 0px 10px 20px 4px #00000015;
+  border-radius: 7px;
+}
+.customForm .form-title {
+  color: #4db3a5;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400 !important;
+}
+
+/* form inputs */
+.customForm .form-control {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+.customForm button {
+  padding: 10px 20px;
+}
+
+/* error */
+label.error {
+  color: red;
+  padding-left: 5px;
+}
+
+/* re password */
+#repassword p{
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+/* requests page */
+.single-request {
+  padding: 25px;
+  padding-top: 2px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid #ebebeb;
+  -webkit-transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+}
+.single-request:hover .profile .image .circle-1 {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.single-request:hover .profile .image .circle-2 {
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+.profile {
+  text-align: center;
+}
+.profile .image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 30px auto 0 auto;
+}
+.profile .image .circle-1, .profile .image .circle-2 {
+  position: absolute;
+  box-sizing: border-box;
+  width: 76px;
+  height: 76px;
+  top: -3px;
+  left: -3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #753a88 #753a88 #753a88 transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+.profile .image .circle-2 {
+  width: 82px;
+  height: 82px;
+  top: -6px;
+  left: -6px;
+  border-color: #cc2b5e transparent #cc2b5e #cc2b5e;
+}
+.image .icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 19%;
+  font-size: 45px;
+  margin: 0;
+  color: #cc2b5e;
+  width: unset;
+}
+.profile .name {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.profile .date {
+  font-size: 13px;
+  line-height: 15px;
+}
+.request-info-area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+.request-info-area ul>li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0px;
+}

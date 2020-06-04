@@ -1,0 +1,23 @@
+<div id="unapproveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Unapprove Request</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>Are you sure you want to Unapprove this request?</h3>
+            </div>
+            <div class="modal-footer">
+                <form id="unapproveModalForm" method="post">
+                    <input type="hidden" name="unapproveId" id="unapproveId">
+                    <button type="submit" name="unapprove" class="btn btn-danger">Unapprove</button>
+                </form>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
